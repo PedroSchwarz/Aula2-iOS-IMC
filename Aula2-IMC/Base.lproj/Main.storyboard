@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lUM-0f-g6C">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="v2H-Ei-efg">
+            <objects>
+                <navigationController id="lUM-0f-g6C" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fKG-hq-m6I">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jbi-6f-4VV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YGa-J1-Yxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-305" y="117"/>
+        </scene>
+        <!--Calculadora IMC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Aula2_IMC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calcule o seu IMC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNZ-xB-X9a">
+                                <rect key="frame" x="16" y="80" width="248" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Altura (CM)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JNp-Sh-x9i">
+                                <rect key="frame" x="69.5" y="159" width="289.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Altura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOl-Ax-sqr">
+                                <rect key="frame" x="16" y="159" width="45.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14y-Uo-L2A">
+                                <rect key="frame" x="16" y="204" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Peso (KG)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lRy-oQ-AJJ">
+                                <rect key="frame" x="62" y="205" width="297" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2Y-S7-mC1">
+                                <rect key="frame" x="16" y="275" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNG-pq-zFB">
+                                <rect key="frame" x="144.5" y="610" width="86" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Calcular"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VNZ-xB-X9a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6c6-hk-6Mf"/>
+                            <constraint firstItem="EOl-Ax-sqr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8Ir-yY-ari"/>
+                            <constraint firstItem="u2Y-S7-mC1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9ml-CP-J3o"/>
+                            <constraint firstItem="lRy-oQ-AJJ" firstAttribute="leading" secondItem="14y-Uo-L2A" secondAttribute="trailing" constant="8" id="A7U-fn-G92"/>
+                            <constraint firstItem="VNZ-xB-X9a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="FQG-57-3hU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u2Y-S7-mC1" secondAttribute="trailing" constant="16" id="GHM-Mv-sMr"/>
+                            <constraint firstItem="fNG-pq-zFB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GnL-CM-DMU"/>
+                            <constraint firstItem="JNp-Sh-x9i" firstAttribute="leading" secondItem="EOl-Ax-sqr" secondAttribute="trailing" constant="8" id="LTu-Lj-Sle"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fNG-pq-zFB" secondAttribute="bottom" constant="16" id="LU3-6q-AHO"/>
+                            <constraint firstItem="u2Y-S7-mC1" firstAttribute="top" secondItem="lRy-oQ-AJJ" secondAttribute="bottom" constant="40" id="Lc1-h2-A6Q"/>
+                            <constraint firstItem="EOl-Ax-sqr" firstAttribute="top" secondItem="VNZ-xB-X9a" secondAttribute="bottom" constant="40" id="Zk7-oA-7Wh"/>
+                            <constraint firstItem="14y-Uo-L2A" firstAttribute="top" secondItem="EOl-Ax-sqr" secondAttribute="bottom" constant="24" id="bD5-zc-mDa"/>
+                            <constraint firstItem="JNp-Sh-x9i" firstAttribute="top" secondItem="VNZ-xB-X9a" secondAttribute="bottom" constant="40" id="c9G-Wj-g8P"/>
+                            <constraint firstItem="lRy-oQ-AJJ" firstAttribute="top" secondItem="JNp-Sh-x9i" secondAttribute="bottom" constant="16" id="gav-EW-4Se"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lRy-oQ-AJJ" secondAttribute="trailing" constant="16" id="niD-32-c3Q"/>
+                            <constraint firstItem="14y-Uo-L2A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qH6-dX-bgq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JNp-Sh-x9i" secondAttribute="trailing" constant="16" id="v4M-8D-mgK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calculadora IMC" id="xEA-s5-a9x">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="Ly2-J6-HI6"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582" y="118"/>
+        </scene>
+    </scenes>
+</document>
